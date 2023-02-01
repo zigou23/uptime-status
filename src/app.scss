@@ -118,6 +118,7 @@ a {
       display: flex;
       justify-content: space-between;
       margin: 15px 0 10px 0;
+      flex-direction: row-reverse; //布局从右往左
       i {
         flex-grow: 1;
         margin: 0 1px;
@@ -137,10 +138,10 @@ a {
           opacity: 0.6;
         }
         &:first-child {
-          margin-left: 0;
+          margin-right: 0;
         }
         &:last-child {
-          margin-right: 0;
+          margin-left: 0;
         }
       }
     }

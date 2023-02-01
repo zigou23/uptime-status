@@ -21,3 +21,21 @@
 - 将所有文件上传到网站空间
 
 ⚠️ 如果没有修改代码的需求，您不需要 git clone 本项目，只需要下载 Release 的文件包即可。
+
+## 重构
+
+首先git clone此项目，再安装环境
+
+```
+npm install update
+npm install
+```
+
+等待环境安装完成（如果出问题尝试 `npm audit fix`
+
+本地实时预览 `npm run start` ，并修改你的文件
+
+完成后，`npm run build` 生成静态文件，去 `build` 文件夹下查看。
+
+本地查看出问题尝试 `href="/ `改成 `href="./` 试试
+
