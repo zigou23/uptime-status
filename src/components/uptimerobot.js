@@ -51,7 +51,7 @@ function UptimeRobot({ apikey }) {
         })}
       </div>
       <div className='summary'>
-  {window.innerWidth < 550 ?
+  {window.innerWidth <= 550 ?
     (<>
       <span>{site.daily[34].date.format('YYYY-MM-DD')}</span>
     </>) :
