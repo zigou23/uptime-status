@@ -43,10 +43,30 @@ function UptimeRobot({ apikey }) {
             status = 'down';
             text += `故障 ${data.down.times} 次，累计 ${formatDuration(data.down.duration)}，可用率 ${formatNumber(data.uptime)}%`;
           }
-          return (<i key={index} className={status} data-tip={text} />)
+          // 添加 day 属性
+          const day = index + 1;
+          // 添加 class 属性
+          const className = `daily-item ${status}`;
+          return (<i key={index} className={className} data-tip={text} day={day} />)
         })}
       </div>
       <div className='summary'>
+  {window.innerWidth < 550 ?
+    (<>
+      <span>{site.daily[34].date.format('YYYY-MM-DD')}</span>
+    </>) :
+    (<>
+      <span>{site.daily[site.daily.length - 1].date.format('YYYY-MM-DD')}</span>
+    </>)
+  }
+  <span>
+    {site.total.times
+      ? `最近 ${CountDays} 天故障 ${site.total.times} 次，累计 ${formatDuration(site.total.duration)}，平均可用率 ${site.average}%`
+      : `最近 ${CountDays} 天可用率 ${site.average}%`}
+  </span>
+  <span>今天</span>
+</div>
+      {/* <div className='summary'>
         <span>{site.daily[site.daily.length - 1].date.format('YYYY-MM-DD')}</span>
         <span>
           {site.total.times
@@ -54,7 +74,7 @@ function UptimeRobot({ apikey }) {
             : `最近 ${CountDays} 天可用率 ${site.average}%`}
         </span>
         <span>今天</span>
-      </div>
+      </div> */}
       <ReactTooltip className='tooltip' place='top' type='dark' effect='solid' />
     </div>
   ));

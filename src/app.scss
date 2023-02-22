@@ -122,7 +122,7 @@ a {
       i {
         flex-grow: 1;
         margin: 0 1px;
-        height: 25px;
+        height: 1.8rem;
         border-radius: 5px;
         transition: opacity ease 150ms;
         &.ok {
@@ -159,6 +159,11 @@ a {
   }
   .site:last-child {
     border-bottom: none;
+  }
+}
+@media (max-width: 550px) {
+  .daily-item:nth-child(n+36) {
+    display: none;
   }
 }
 
