@@ -4,6 +4,17 @@
 
 <img width="1152" alt="image" src="https://user-images.githubusercontent.com/25887822/178935137-6d23521d-5894-4fb8-922d-3575be4f7abc.png">
 
+## BUG
+- [ ] 当屏幕宽度正好549px时，会出现左上面框框变成35格，下边日期显示60天(你填写的日期)前
+
+## 更改内容
+- [x] 自适应屏幕大小(目前需自己改代码
+- [x] 从右往左排序
+- [x] 添加老接口，可自定义ApiDomain
+- [x] 把方块变得更长一点
+- [x] 红色变浅一点(因为整天不在线的话，会显示无数据
+- [x] 颜色变灰，不使用纯白
+
 ## 事先准备
 
 - 您需要先到 [UptimeRobot](https://uptimerobot.com/ "UptimeRobot") 添加站点监控，并在 My Settings 页面获取 API Key
