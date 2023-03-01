@@ -23,9 +23,8 @@ function App() {
           ))}
         </div>
         <div id='footer'>
-          <p>基于 <Link to='//uptimerobot.com/' text='UptimeRobot' /> 接口制作，检测频率 30 min</p>
-          <p>You can visit <Link to='//stats.uptimerobot.com/jV3LYSY5AX' text='this page' /> (pw:123123) that if the page doesn't load.</p>
-          <p>&copy; 2023 Made by <Link to='//status.org.cn/' text='status' /> & <Link to='//github.com/yb/uptime-status/' text='GitHub' /> , Modified by <Link to='//github.com/zigou23/uptime-status/' text='zigou' />., Version {Package.version}</p>
+          <p>Based on <Link to='//uptimerobot.com/' text='UptimeRobot' /> API, the detection frequency is 30 minutes.</p>
+          <p>© 2023 Transplanted from <Link to='//github.com/yb/uptime-status/' text='yb/uptime-status' />, Modified by <Link to='//github.com/zigou23/uptime-status/' text='zigou23' />.</p>
         </div>
       </div>
     </>

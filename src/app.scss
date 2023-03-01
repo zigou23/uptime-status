@@ -54,11 +54,11 @@ a {
 }
 
 #uptime {
-  background-color: #F2F3F4;
+  background-color: #f5f8f8;
   border-radius: 22px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 9px 3px rgb(0 0 0 / 10%);
   margin-top: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 1.5rem;
   padding: 15px 0;
   overflow: hidden;
   .site {
@@ -172,8 +172,11 @@ a {
   text-align: center;
   line-height: 25px;
   color: #969ea8;
+  margin-bottom: 0.6rem;
   a {
     font-weight: bold;
-    color: $primary-color;
+  }
+  a:hover{
+    color: #575c65;
   }
 }
